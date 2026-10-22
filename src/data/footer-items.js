@@ -25,7 +25,7 @@ export const getFooterItems = () => {
       { label: t`Documentation`, href: 'https://docs.xarray.dev/en/stable/' },
       {
         label: t`Tutorials`,
-        href: 'https://docs.xarray.dev/en/stable/tutorials-and-videos.html',
+        href: 'https://docs.xarray.dev/en/stable/getting-started-guide/index.html#tutorials-and-videos',
       },
       {
         label: t`Example Gallery`,
