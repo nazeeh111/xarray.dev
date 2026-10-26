@@ -12,7 +12,7 @@ import {
   Button,
 } from '@chakra-ui/react'
 
-function getLocales() {
+function useLocales() {
   const { t } = useLingui()
   return [
     { locale: 'en', label: t`English` },
@@ -21,8 +21,7 @@ function getLocales() {
   ]
 }
 
-function getLocaleLabel(locale) {
-  const locales = getLocales()
+function getLocaleLabel(locale, locales) {
   const localeObject = locales.find((object) => object.locale === locale)
   return localeObject ? localeObject.label : locale
 }
@@ -30,6 +29,7 @@ function getLocaleLabel(locale) {
 export const LanguageSwitcher = () => {
   const router = useRouter()
   const pathname = usePathname()
+  const locales = useLocales()
 
   async function changeLocale() {
     const localeString = i18n.locale
@@ -48,10 +48,10 @@ export const LanguageSwitcher = () => {
   return (
     <Menu>
       <MenuButton as={Button} size='xs' variant='outline'>
-        {getLocaleLabel(i18n.locale)}
+        {getLocaleLabel(i18n.locale, locales)}
       </MenuButton>
       <MenuList>
-        {getLocales().map((object) => (
+        {locales.map((object) => (
           <Link
             key={object.locale}
             href={'/' + object.locale + pathname}

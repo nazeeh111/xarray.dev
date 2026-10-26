@@ -3,7 +3,7 @@ import React from 'react'
 import { IoIosGlobe, IoLogoGithub } from 'react-icons/io'
 
 import { Image } from '@/components/mdx'
-import { getLibraries } from '@/data/array-libraries'
+import { useLibraries } from '@/data/array-libraries'
 
 import { SocialLink } from '@/components/social-link'
 import { useLingui } from '@lingui/react/macro'
@@ -43,7 +43,7 @@ const Library = ({ name, description, repo, url, logo }) => {
 
 export const ArrayLibraries = () => {
   const { t } = useLingui()
-  const libraries = getLibraries()
+  const libraries = useLibraries()
   return (
     <Box my={8}>
       <Text fontSize={'lg'}>

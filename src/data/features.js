@@ -1,6 +1,6 @@
 import { useLingui } from '@lingui/react/macro'
 
-export const getFeatures = () => {
+export const useFeatures = () => {
   const { t } = useLingui()
   let Features = [
     {

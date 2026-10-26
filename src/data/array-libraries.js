@@ -1,6 +1,6 @@
 import { useLingui } from '@lingui/react/macro'
 
-export const getLibraries = () => {
+export const useLibraries = () => {
   const { t } = useLingui()
   let Libraries = [
     {

@@ -1,6 +1,6 @@
 import { useLingui } from '@lingui/react/macro'
 
-export function getProjects() {
+export function useProjects() {
   const { t } = useLingui()
   return [
     {

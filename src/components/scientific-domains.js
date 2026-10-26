@@ -3,13 +3,13 @@ import React from 'react'
 
 import { Link } from '@/components/mdx'
 import { ProjectCard } from '@/components/project-card'
-import { getProjects } from '@/data/projects'
+import { useProjects } from '@/data/projects'
 
 import { useLingui } from '@lingui/react/macro'
 
 export const ScientificDomains = () => {
   const { t } = useLingui()
-  const projects = getProjects()
+  const projects = useProjects()
   return (
     <Box my={8}>
       <Text fontSize={'lg'}>

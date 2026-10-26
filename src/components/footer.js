@@ -15,7 +15,7 @@ import { getRootURL } from '@/lib/seo-utils'
 import { GitSHA } from '@/components/git-sha'
 import { Image, Link } from '@/components/mdx'
 import { NetlifyCallout } from '@/components/netlify'
-import { getFooterItems } from '@/data/footer-items'
+import { useFooterItems } from '@/data/footer-items'
 import { FaGithub, FaRss, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { useLingui } from '@lingui/react/macro'
 
@@ -53,7 +53,7 @@ const ListHeader = ({ children }) => {
 
 export const Footer = () => {
   let { t } = useLingui()
-  let footerItems = getFooterItems()
+  let footerItems = useFooterItems()
   const currentYear = new Date().getFullYear()
   return (
     <Box
