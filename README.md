@@ -1,7 +1,5 @@
 # xarray landing page
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/4f940719-54bd-4ff7-95e0-0088dfb3c10f/deploy-status)](https://app.netlify.com/projects/xarraydev/deploys)
-
 Landing Page for xarray project.
 
 ## Overview
@@ -44,12 +42,7 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-<a href='https://www.netlify.com'>
-  <img
-    src='https://www.netlify.com/assets/badges/netlify-badge-color-bg.svg'
-    alt='Deploys by Netlify'
-  />
-</a>
+
 
 ## Translations
 
