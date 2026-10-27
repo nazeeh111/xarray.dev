@@ -10,13 +10,13 @@ import {
 import React from 'react'
 
 import { Heading } from '@/components/mdx'
-import { getFeatures } from '@/data/features'
+import { useFeatures } from '@/data/features'
 import { CheckIcon } from '@chakra-ui/icons'
 import { useLingui } from '@lingui/react/macro'
 
 export const Features = () => {
   const { t } = useLingui()
-  const features = getFeatures()
+  const features = useFeatures()
   return (
     <Box id={'features'} as='section'>
       <Container maxW='container.lg' centerContent>

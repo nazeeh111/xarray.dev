@@ -1,6 +1,6 @@
 import { useLingui } from '@lingui/react/macro'
 
-export function getMenuItems() {
+export function useMenuItems() {
   const { t } = useLingui()
   let menuItems = [
     { label: t`Features`, href: '/#features' },

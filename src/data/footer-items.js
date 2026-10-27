@@ -1,6 +1,6 @@
 import { useLingui } from '@lingui/react/macro'
 
-export const getFooterItems = () => {
+export const useFooterItems = () => {
   const { t } = useLingui()
   let footerItems = {
     xarray: [

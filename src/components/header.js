@@ -1,7 +1,7 @@
 import { DesktopNav } from '@/components/desktop-nav'
 import { Link } from '@/components/mdx'
 import { MobileNav } from '@/components/mobile-nav'
-import { getMenuItems } from '@/data/menu-items'
+import { useMenuItems } from '@/data/menu-items'
 import { CloseIcon, HamburgerIcon } from '@chakra-ui/icons'
 import {
   Box,
@@ -20,7 +20,7 @@ import { useRouter } from 'next/router'
 import { LanguageSwitcher } from './language-switcher'
 
 export const Header = () => {
-  let navItems = getMenuItems()
+  let navItems = useMenuItems()
   const { isOpen, onToggle } = useDisclosure()
   const { colorMode, toggleColorMode } = useColorMode()
   const router = useRouter()
